@@ -1,46 +1,19 @@
-# Getting Started with Create React App
+# Why hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"Hooks are a new addition to React in version 16.8 that allows you use state and other React features, like lifecycle methods, without writing a class. Hooks let you always use functions instead of having to constantly switch between functions, classes, higher-order components, and render props."
 
-## Available Scripts
+# `useMemo` vs `useCallback`
 
-In the project directory, you can run:
+- useMemo keeps a function from being executed again if it didn’t receive a set of parameters that were previously used. It returns the results of a function. Use it when you want to prevent some heavy or costly operations from being called on each render. (enregistre le résultat)
 
-### `yarn start`
+- useCallback keep a function from being re-created again, based on a list of dependencies. It returns the function itself. Use it when you want to propagate it to child components, and prevent from a costly function from re-running. (enregistre la fonction)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# TODO
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- USE_STATE ✅
+- USE_EFFECT ✅
+- USE_CUSTOM ✅
+- USE_REF ✅
+- USE_CALLBACK ✅
+- USE_MEMO ✅
+- MEMOIZATION

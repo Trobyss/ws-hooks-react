@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Routes } from "../navigation/AppRouter";
 
+// Or props
 export const UseEffectPage = () => {
   const [state, setState] = useState(0);
 
@@ -30,7 +31,7 @@ export const UseEffectPage = () => {
   );
 };
 
-export const UseEffactBadly = () => {
+export const UseEffectBadly = () => {
   const [state, setState] = useState(0);
 
   useEffect(() => {

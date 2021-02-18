@@ -10,15 +10,8 @@ export const UseMemoPage = () => {
   const [number, setNumber] = useState<number>(5);
   const [rerender, setRerender] = useState<boolean>(false);
 
-  const result = useMemo(() => {
-    return number;
-  }, []);
-
   const expensive = useMemo(() => veryExpensiveCalcul(number), [number]);
-
-  // const result = () => {
-  //   return number;
-  // };
+  // const expensive = veryExpensiveCalcul(number);
 
   return (
     <div>

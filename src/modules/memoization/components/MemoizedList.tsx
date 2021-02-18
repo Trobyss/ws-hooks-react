@@ -6,6 +6,10 @@ interface ElementProps {
   handleSelected(id: number): void;
 }
 
+// Use React.Memo
+/**
+ * React.memo for a performance boost in some cases by memoizing the result. This means that React will skip rendering the component, and reuse the last rendered result
+ */
 export const ListElementMemoized: React.FC<ElementProps> = React.memo(
   (props) => {
     useEffect(() => {

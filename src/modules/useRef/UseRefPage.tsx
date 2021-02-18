@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 
-
-
 /**
  * useRef = mutable, returned object will persist for the full lifetime of the component
  * Mutating the .current property doesn’t cause a re-render

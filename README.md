@@ -8,12 +8,16 @@
 
 - useCallback keep a function from being re-created again, based on a list of dependencies. It returns the function itself. Use it when you want to propagate it to child components, and prevent from a costly function from re-running. (enregistre la fonction)
 
+# hooks
+
+Not in conditionnal
+
 # TODO
 
 - USE_STATE ✅
 - USE_EFFECT ✅
-- USE_CUSTOM ✅
+- Custom Hooks ✅
 - USE_REF ✅
 - USE_CALLBACK ✅
 - USE_MEMO ✅
-- MEMOIZATION
+- MEMOIZATION ✅
